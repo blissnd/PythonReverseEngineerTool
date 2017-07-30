@@ -1,0 +1,12 @@
+digraph hierarchy {
+
+	edge[dir=both, arrowtail=empty, arrowhead=empty];
+
+subgraph uml {
+	node [shape=box, style=solid, color=black] ; "example_function_2" [color=blue, fontcolor=blue, URL="./html_output.html#example_function_2" target="_parent"]; "example_function_1" [URL="./example_function_1.svg" target="_parent"]	edge[dir=both, minlen=2.00,arrowtail=empty, arrowhead=empty];
+
+"example_function_1" -> "example_function_2" [shape=circle, arrowhead=onormal,arrowtail=none];
+
+	}
+fontsize=14;
+}

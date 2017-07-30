@@ -1,0 +1,26 @@
+digraph hierarchy {
+
+	edge[dir=both, arrowtail=empty, arrowhead=empty];
+
+subgraph uml {
+	node [shape=box, style=solid, color=black] ; "A" [URL="./A.svg" target="_parent"]; "C" [URL="./C.svg" target="_parent"]; "B" [URL="./B.svg" target="_parent"]; "E" [URL="./E.svg" target="_parent"]; "D" [URL="./D.svg" target="_parent"]	edge[dir=both, minlen=2.00,arrowtail=empty, arrowhead=empty];
+
+
+"C" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+
+"B" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+
+"E" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+"E" -> "B" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+"E" -> "D" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+
+"D" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+"D" -> "B" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+
+"C" -> "E" [shape=circle,label="has-a", arrowhead=none,arrowtail=diamond];
+"D" -> "A" [shape=circle,label="has-a", arrowhead=none,arrowtail=diamond];
+"D" -> "C" [shape=circle,label="has-a", arrowhead=none,arrowtail=diamond];
+"D" -> "B" [shape=circle,label="has-a", arrowhead=none,arrowtail=diamond];
+	}
+fontsize=14;
+}

@@ -1,0 +1,14 @@
+digraph hierarchy {
+
+	edge[dir=both, arrowtail=empty, arrowhead=empty];
+
+subgraph uml {
+	node [shape=box, style=solid, color=black] ; "MAIN" [URL="./MAIN.svg" target="_parent"]; "example_function_2" [URL="./example_function_2.svg" target="_parent"]; "__init__" [URL="./__init__.svg" target="_parent"]; "example_function_1" [URL="./example_function_1.svg" target="_parent"]	edge[dir=both, minlen=2.00,arrowtail=empty, arrowhead=empty];
+
+"__init__" -> "example_function_1" [shape=circle, arrowhead=onormal,arrowtail=none];
+
+"example_function_1" -> "example_function_2" [shape=circle, arrowhead=onormal,arrowtail=none];
+
+	}
+fontsize=14;
+}

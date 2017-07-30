@@ -1,0 +1,14 @@
+digraph hierarchy {
+
+	edge[dir=both, arrowtail=empty, arrowhead=empty];
+
+subgraph uml {
+	node [shape=box, style=solid, color=black] ; "C" [color=blue, fontcolor=blue, URL="./html_output.html#C" target="_parent"]; "A" [URL="./A.svg" target="_parent"]; "E" [URL="./E.svg" target="_parent"]; "D" [URL="./D.svg" target="_parent"]"C" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+
+"C" -> "E" [shape=circle,label="has-a", arrowhead=none,arrowtail=diamond];
+
+
+"D" -> "C" [shape=circle,label="has-a", arrowhead=none,arrowtail=diamond];
+	}
+fontsize=14;
+}

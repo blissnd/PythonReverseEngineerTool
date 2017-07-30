@@ -1,0 +1,16 @@
+digraph hierarchy {
+
+	edge[dir=both, arrowtail=empty, arrowhead=empty];
+
+subgraph uml {
+	node [shape=box, style=solid, color=black] ; "A" [color=blue, fontcolor=blue, URL="./html_output.html#A" target="_parent"]; "C" [URL="./C.svg" target="_parent"]; "B" [URL="./B.svg" target="_parent"]; "E" [URL="./E.svg" target="_parent"]; "D" [URL="./D.svg" target="_parent"]; "D" [URL="./D.svg" target="_parent"]
+
+"C" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+"B" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+"E" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+"D" -> "A" [shape=circle,label="is-a", arrowhead=onormal,arrowtail=none];
+
+"D" -> "A" [shape=circle,label="has-a", arrowhead=none,arrowtail=diamond];
+	}
+fontsize=14;
+}

@@ -1,0 +1,10 @@
+digraph hierarchy {
+
+	edge[dir=both, arrowtail=empty, arrowhead=empty];
+
+subgraph uml {
+	node [shape=box, style=solid, color=black] ; "MAIN" [color=blue, fontcolor=blue, URL="./html_output.html#MAIN" target="_parent"]	edge[dir=both, minlen=2.00,arrowtail=empty, arrowhead=empty];
+
+	}
+fontsize=14;
+}
