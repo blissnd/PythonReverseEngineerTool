@@ -9,3 +9,5 @@ Run this first:
 Then run this:
   
   > python generate_call_graph.py generic_class
+
+*NOTE: You need only give the top level directory of your project as the argument; the project directory tree can be nested to any depth.
