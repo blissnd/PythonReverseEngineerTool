@@ -1,4 +1,17 @@
-
+######################################################################
+#                LICENSE
+#                       
+# Copyright (c) 2017 Nathan D Bliss
+# 
+# Everyone is permitted to copy and distribute verbatim copies
+# of this license document, but changing it is not allowed.
+#
+#                            Preamble
+#
+#  This License is a free, copyleft license for
+# software and other kinds of works. See accompanying License 
+# document for details.
+######################################################################
 
 import re
 import os
